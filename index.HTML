@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY LOVE MERI JANN MERI MADAMJI SUNO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #FF6347, #FFB6C1); /* Soft red gradient */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            animation: backgroundAnimation 10s ease infinite;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            height: 100vh;
+        }
+
+        header {
+            background-color: rgba(255, 99, 131, 0.9); /* Slightly transparent pink */
+            color: white;
+            text-align: center;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .container {
+            padding: 40px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .message {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #FF1493; /* Deep pink */
+        }
+
+        .gift {
+            font-size: 24px;
+            color: #FFD700; /* Gold */
+            margin-bottom: 20px;
+        }
+
+        .poem {
+            font-size: 18px;
+            margin-top: 30px;
+            font-style: italic;
+            color: #FFDAB9; /* Light peach */
+        }
+
+        .song-player {
+            margin-top: 20px;
+        }
+
+        .image-container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05); /* Zoom effect */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .footer {
+            font-size: 16px;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        /* Gift box styles */
+        .gift-box {
+            background-color: #FF1493; /* Deep pink */
+            color: white;
+            padding: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            margin-top: 20px;
+            position: absolute; /* Position at the top */
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+        }
+
+        .gift-box:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+            background-color: #FF6347; /* Lighter pink when hovered */
+        }
+
+        .gift-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 28px;
+            color: #FFD700; /* Gold */
+            font-weight: bold;
+            animation: revealMessage 1s ease-in-out;
+        }
+
+        @keyframes revealMessage {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(135deg, #FF6347, #FFB6C1); }
+            50% { background: linear-gradient(135deg, #FF6347, #FF1493); }
+            100% { background: linear-gradient(135deg, #FF6347, #FFB6C1); }
+        }
+
+        /* Lyrics floating animation */
+        .lyrics {
+            position: absolute;
+            font-size: 1.5rem;
+            color: #FFD700;
+            font-weight: bold;
+            white-space: nowrap;
+            opacity: 0;
+            animation: floatLyrics 15s linear infinite;
+        }
+
+        @keyframes floatLyrics {
+            0% { left: -100%; opacity: 1; }
+            100% { left: 100%; opacity: 1; }
+        }
+
+        /* Control the speed of the lyrics based on the duration */
+        .lyrics:nth-child(1) { animation-duration: 20s; }
+        .lyrics:nth-child(2) { animation-duration: 25s; }
+        .lyrics:nth-child(3) { animation-duration: 30s; }
+        .lyrics:nth-child(4) { animation-duration: 35s; }
+        .lyrics:nth-child(5) { animation-duration: 40s; }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MY LOVE MERI JANN MERI MADAMJI SUNO</h1>
+</header>
+
+<div class="container">
+    <p class="message">Hello love, here's something special just for you:</p>
+
+    <p class="gift">RELAX BABY. Enjoy!</p>
+
+    <!-- Romantic Poem in Hindi -->
+    <p class="poem">You are mine, sab kuch hai sahi,<br>
+    Tere saath hoon main, duniya hai nayi.<br>
+    Chahe dard ho ya ho koi gham,<br>
+    Main hoon tere paas, koi darr nahi hum.<br><br>
+
+    Teri aankhon mein jo bhi andhera,<br>
+    Usse main door kar doon, bana doon savera.<br>
+    Tu kabhi na akela hoga, yeh jaan le,<br>
+    Mera pyaar hamesha tere saath rahe.<br><br>
+
+    Tu hai mera, main hoon tera,<br>
+    Tu hai sahi, sab kuch mera.<br>
+    Relax ho, baby, main hoon tera,<br>
+    Tere saath hoon hamesha, yeh mera wada.</p>
+
+    <!-- Audio Player for "Adiye" song -->
+    <div class="song-player">
+        <audio id="song" controls>
+            <source src="3333.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="image-container">
+        <p>love u BABY:</p>
+        <img src="2.jpg" alt="Your Valentine Gift">
+    </div>
+
+    <!-- Gift box that opens on click -->
+    <div class="gift-box" onclick="showGiftMessage()">
+        Click to open your gift
+    </div>
+    <div class="gift-message" id="giftMessage">
+        baby LOVE U
+    </div>
+
+    <p class="footer">Sending you all my love, always.</p>
+</div>
+
+<!-- Floating lyrics with the Sanskrit phrase -->
+<div class="lyrics" style="top: 20%;">त्वां विना स्वर्ग अनर्थ</div>
+<div class="lyrics" style="top: 30%;">त्वां विना स्वर्ग अनर्थ</div>
+<div class="lyrics" style="top: 40%;">त्वां विना स्वर्ग अनर्थ</div>
+<div class="lyrics" style="top: 50%;">त्वां विना स्वर्ग अनर्थ</div>
+<div class="lyrics" style="top: 60%;">त्वां विना स्वर्ग अनर्थ</div>
+
+<script>
+    // JavaScript to trigger lyrics floating when the song plays and pause when the song is paused
+    const audioElement = document.getElementById('song');
+    const lyrics = document.querySelectorAll('.lyrics');
+
+    audioElement.addEventListener('play', () => {
+        // Start the floating animation when the song plays
+        lyrics.forEach(lyric => {
+            lyric.style.animationPlayState = 'running';
+            lyric.style.opacity = 1; // Make lyrics visible
+        });
+    });
+
+    audioElement.addEventListener('pause', () => {
+        // Pause the floating animation when the song is paused
+        lyrics.forEach(lyric => {
+            lyric.style.animationPlayState = 'paused';
+            lyric.style.opacity = 0.5; // Make lyrics semi-visible while paused
+        });
+    });
+
+    audioElement.addEventListener('ended', () => {
+        // Reset the lyrics when the song ends
+        lyrics.forEach(lyric => {
+            lyric.style.animationPlayState = 'paused';
+            lyric.style.opacity = 0; // Hide lyrics when the song ends
+        });
+    });
+
+    // Function to show gift message when clicked
+    function showGiftMessage() {
+        const giftMessage = document.getElementById('giftMessage');
+        giftMessage.style.display = 'block'; // Make the hidden message visible
+    }
+</script>
+
+</body>
+</html>
